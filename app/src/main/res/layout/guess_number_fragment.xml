@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/centerView"
+        android:id="@+id/questionMark"
+        android:src="@drawable/signo_de_interrogacion"
+        android:layout_width="140dp"
+        android:layout_height="140dp" />
+
+
+    <View
+        android:layout_centerInParent="true"
+        android:id="@+id/centerView"
+        android:layout_width="0dp"
+        android:layout_height="52dp"/>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/centerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/initGame"
+            android:textSize="24sp"
+            android:text="@string/initGame"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
